@@ -20,11 +20,6 @@ module.exports = class botinfo extends Interaction {
     .setTitle(`Help`)  
     .setColor("#2f3136")
 
-     embed.setAuthor(
-      member.user.tag,
-      member.user.displayAvatarURL({ dynamic: true })
-    );
-
       embed
 
       .addField('Uptime', `${ms(this.client.uptime)}`, true)

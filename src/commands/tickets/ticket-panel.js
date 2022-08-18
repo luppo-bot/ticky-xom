@@ -1,5 +1,5 @@
 const { MessageEmbed, MessageActionRow, MessageButton } = require("discord.js");
-module.exports = class Send extends Interaction {
+module.exports = class ticketpanel extends Interaction {
   constructor() {
     super({
       name: "ticket-panel",

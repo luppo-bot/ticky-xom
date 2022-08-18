@@ -30,7 +30,6 @@ module.exports = class botinfo extends Interaction {
       .addField(`<:user:1008816981929107457> User Count`, `${this.client.users.cache.size} users`, true)
       .addField('<:node:994985829913067571> Node', `${process.version} on ${process.platform} ${process.arch}`, true)
       .addField('<:channel:1008818899137089596> Channel Count', `${this.client.channels.cache.size}`, true)
-      .addField('<:slashcommand:1008821061523087410> Command Count', `${this.client.commands.map(c => c.name).length}`, true)
       .setTimestamp()
       .setColor("#3498DB");
 

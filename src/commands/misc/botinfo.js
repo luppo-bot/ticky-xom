@@ -30,7 +30,6 @@ module.exports = class botinfo extends Interaction {
       .addField(`User Count`, `${this.client.users.cache.size} users`, true)
       .addField('Node', `${process.version} on ${process.platform} ${process.arch}`, true)
       .setTimestamp()
-      .setFooter({ text: "Hope you like me!" })
       .setColor("#3498DB");
 
     const row = new MessageActionRow()

@@ -26,7 +26,7 @@ module.exports = class Support extends Interaction {
             .addComponents(
                 new MessageButton()
                     .setLabel("Support")
-                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=1007212537076535376&permissions=8&scope=bot%20applications.commands`)
+                    .setURL(`https://discord.gg/UybeVq66hF`)
                     .setEmoji("🔗")
                     .setStyle("LINK")
             ) 

@@ -29,13 +29,15 @@ module.exports = class help extends Interaction {
          new MessageButton()
          .setLabel("Invite")
          .setStyle("LINK")
-         .setURL(`https://youtube.com`)
+         .setURL(`https://discord.com/oauth2/authorize?client_id=1009839129862869062&permissions=8&scope=bot%20applications.commands`)
+         .setEmoji("989105142219563008")
         )
         .addComponents(
           new MessageButton()
           .setLabel("Support")
           .setStyle("LINK")
-          .setURL(`https://youtube.com`)
+          .setURL(`https://discord.gg/UybeVq66hF`)
+          .setEmoji("989105545946497055")
          )
 
 

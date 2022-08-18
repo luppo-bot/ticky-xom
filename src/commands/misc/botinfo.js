@@ -1,6 +1,9 @@
 const { MessageEmbed, MessageButton, MessageActionRow } = require("discord.js");
 const moment = require("moment");
 const Bot = require("../../struct/Bot");
+const ms = require('ms');
+const chalk = require('chalk');
+
 
 module.exports = class botinfo extends Interaction {
   constructor() {

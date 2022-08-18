@@ -24,7 +24,14 @@ module.exports = class botinfo extends Interaction {
 
       .addField('Uptime', `${ms(this.client.uptime)}`, true)
       .addField('WebSocket Ping', `${this.client.ws.ping}ms`, true)
-      .setFooter(`ID:`);
+      .addField('Memory', `${(process.memoryUsage().rss / 1024 / 1024).toFixed(2)} MB RSS\n${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB Heap`, true)
+      .addField('Owner', `<@755566952449310842>`, true)
+      .addField('Guild Count', `${this.client.guilds.cache.size} guilds`, true)
+      .addField(`User Count`, `${this.client.users.cache.size} users`, true)
+      .addField('Node', `${process.version} on ${process.platform} ${process.arch}`, true)
+      .setTimestamp()
+      .setFooter({ text: "Hope you like me!" })
+      .setColor("#3498DB");
 
     const row = new MessageActionRow()
         .addComponents(

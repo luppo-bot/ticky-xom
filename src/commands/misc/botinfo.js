@@ -23,6 +23,7 @@ module.exports = class botinfo extends Interaction {
     embed
 
       .addField('Uptime', `${ms(this.client.uptime)}`, true)
+      .addField('WebSocket Ping', `${this.client.ws.ping}ms`, true)
       .setFooter(`ID:`);
 
     const row = new MessageActionRow()

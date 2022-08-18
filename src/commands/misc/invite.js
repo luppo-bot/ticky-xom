@@ -26,7 +26,7 @@ module.exports = class Invite extends Interaction {
             .addComponents(
                 new MessageButton()
                     .setLabel("Invite")
-                    .setURL(`https://discord.com/api/oauth2/authorize?client_id=1007212537076535376&permissions=8&scope=bot%20applications.commands`)
+                    .setURL(`https://discord.com/oauth2/authorize?client_id=1009839129862869062&permissions=8&scope=bot%20applications.commands`)
                     .setEmoji("🔗")
                     .setStyle("LINK")
             ) 

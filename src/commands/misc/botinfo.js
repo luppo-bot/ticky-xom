@@ -22,7 +22,7 @@ module.exports = class botinfo extends Interaction {
     
     embed
 
-      .addField('Uptime', `${ms(client.uptime)}`, true`)
+      .addField('Uptime', `${ms(client.uptime)}`, true)
       .setFooter(`ID:`);
 
     const row = new MessageActionRow()

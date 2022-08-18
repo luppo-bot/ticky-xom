@@ -14,6 +14,7 @@ module.exports = class Ready extends Event {
             let ticket = await tickets.find()
 
           this.client.user.setActivity(`${ticket.length} tickets`, { type: "WATCHING" });
+          this.client.user.setActivity(`/help`, { type: "WATCHING" });
 
         }, 30000);
 

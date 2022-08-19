@@ -22,7 +22,6 @@ module.exports = class help extends Interaction {
       .addField("<:info:1007308847175712780> Information Commands", `help, whois, invite, support`)
       .addField("<:gears:1009169023495327784> Config Commands", `roles, set, unset, ticket-panel`)
       .addField(":tickets: Ticket Commands", `add, close, delete, open, remove, reopen, transcript`)
-      .setFooter(`ID:`);
 
     const row = new MessageActionRow()
         .addComponents(

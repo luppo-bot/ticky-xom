@@ -18,7 +18,9 @@ const server = require("../../models/Suggestion");
     });
   }
 
-    async exec(int, data) {
+    async exec(int) {
+
+       let data = await server.findById(int.guildId);
 
         const channel = int.options.getChannel('channel')
 

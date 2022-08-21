@@ -1,7 +1,6 @@
 const server = require("../../models/Suggestion");
-
     
-    module.exports = class SetSuggestion extends Interaction {
+  module.exports = class SetSuggestion extends Interaction {
   constructor() {
     super({
       name: "setsuggestions",
@@ -21,10 +20,10 @@ const server = require("../../models/Suggestion");
 
     async exec(int, data) {
 
-        let data = await server.findById(interaction.guildId);
+        let data = await server.findById(int.guildId);
 
         if (!data) data = new server({
-            _id: interaction.guildId
+            _id: int.guildId
         });
 
         const channel = int.options.getChannel('channel')

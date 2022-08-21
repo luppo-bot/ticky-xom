@@ -22,10 +22,6 @@ const server = require("../../models/Suggestion");
 
         let data = await server.findById(int.guildId);
 
-       const data = await this.client.getGuild({
-        _id: interaction.guildId,
-        });
-
         const channel = int.options.getChannel('channel')
 
         if (!channel) {
